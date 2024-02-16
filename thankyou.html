@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* 100% of the viewport height */
+    margin: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#logo {
+    max-width: 100%;
+    
+    order: 2; /* Move this section to the bottom */
+}
+
+#logo img {
+    margin-right: 5%;
+    max-height: 50%;
+}
+
+#redirect-text {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 2em;
+    border: solid 3px red;
+    order: 1; /* Move this section to the top */
+}
+
+#countdown {
+    color: #333;
+}
+
+    </style>
+    <script>
+        // Countdown function
+        function countdownRedirect(seconds, targetUrl) {
+            document.getElementById('countdown').textContent = seconds;
+            if (seconds <= 0) {
+                window.location.href = targetUrl;
+            } else {
+                setTimeout(function () {
+                    countdownRedirect(seconds - 1, targetUrl);
+                }, 1000);
+            }
+        }
+
+        // Start the countdown on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            countdownRedirect(10, 'index.html');
+        });
+    </script>
+</head>
+
+<body>
+    
+    <div id="logo">
+        <div id="redirect-text">
+            <p>Redirecting in <span id="countdown">10</span> seconds...</p>
+        </div>
+        <img src="assets/images/logonew.png" alt="Logo">
+
+        
+    </div>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Hemrald Necklace",
+        "price": 520,
+        "image": "assets/images/prod1.webp"
+    },
+    {
+        "id": 2,
+        "name": "Sphere ring",
+        "price": 220,
+        "image": "assets/images/prod2.webp"
+    },
+    {
+        "id": 3,
+        "name": "Golden Earrings",
+        "price": 250,
+        "image": "assets/images/prod3.webp"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Earthy Set",
+        "price": 420,
+        "image": "assets/images/prod4.webp"
+    },
+    {
+        "id": 5,
+        "name": "Diamond Gem",
+        "price": 120,
+        "image": "assets/images/prod5.webp"
+    },
+    {
+        "id": 6,
+        "name": "Sapphire Earpiece",
+        "price": 130,
+        "image": "assets/images/prod6.webp"
+    },
+    {
+        "id": 7,
+        "name": "Golden Spiral",
+        "price": 120,
+        "image": "assets/images/prod7.webp"
+    },
+    {
+        "id": 8,
+        "name": "Lava Crystal",
+        "price": 120,
+        "image": "assets/images/prod8.webp"
+    },
+    {
+        "id": 9,
+        "name": "Ancestral Medallion",
+        "price": 120,
+        "image": "assets/images/prod9.webp"
+    }
+]
