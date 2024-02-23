@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST['submit']) {
     // Retrieve form data
     $name = $_POST["name"];
     $phone = $_POST["phone"];
